@@ -1,5 +1,4 @@
-repos:
-  - repo: https://github.com/kynan/nbstripout
-    rev: 0.9.1
-    hooks:
-      - id: nbstripout
+# Notebook outputs are stripped automatically on `git add` via the nbstripout
+# clean filter in .gitattributes (not via a modifying pre-commit hook).
+# One-time setup per clone:  python -m nbstripout --install
+repos: []
